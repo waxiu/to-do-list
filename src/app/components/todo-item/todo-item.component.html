@@ -1,0 +1,21 @@
+<mat-toolbar color="basic">
+    <mat-checkbox
+        (change)="onToggle(todo)"
+        [checked]="todo.completed"
+        class="checkboxSpace"
+    ></mat-checkbox>
+
+    <div [ngClass]="setClasses()">
+        {{todo.content}}
+    </div>
+
+    <span class="spacer"></span>
+
+    <button
+        mat-icon-button
+        color="warn"
+        (click)="onDelete(todo)"
+    >
+        <mat-icon>delete</mat-icon>
+    </button>
+</mat-toolbar>

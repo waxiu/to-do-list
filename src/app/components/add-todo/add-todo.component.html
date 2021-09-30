@@ -1,0 +1,22 @@
+<mat-toolbar color="accent">
+    <mat-form-field class="add-todo-content-input" appearance="fill">
+        <mat-label>Content</mat-label>
+        <input
+            matInput
+            placeholder="By pizza"
+            name="todoContent"
+            [(ngModel)]="todoContent"
+            (keydown.enter)="onSubmit()"
+        >
+    </mat-form-field>
+
+    <span class="spacer"></span>
+
+    <button
+        mat-icon-button
+        color="primary"
+        (click)="onSubmit()"
+    >
+        <mat-icon>send</mat-icon>
+    </button>
+</mat-toolbar>

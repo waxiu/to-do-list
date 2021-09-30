@@ -1,0 +1,7 @@
+.checkboxSpace {
+    padding-right: 10px;
+}
+
+.is-completed {
+    text-decoration: line-through;
+}
